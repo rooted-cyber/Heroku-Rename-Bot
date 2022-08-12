@@ -1,55 +1,58 @@
 {
-    "name": "Telegram Files Rename Bot",
-    "description": "A Very Simple Telegram Files Rename Bot by @AbirHasan2005",
+    "name": "Telegram",
+    "description": "You know what it does...",
+    "logo": "",
     "keywords": [
+        "Telethon",
         "telegram",
-        "files",
-        "rename",
-        "bot"
+        "python"
     ],
-    "repository": "https://github.com/AbirHasan2005/Rename-Bot",
-    "website": "https://abirhasan.wtf",
-    "success_url": "https://t.me/AH_RenameBot",
+    "repository": "https://github.com/",
+    "success_url": "https://t.me/Telegram",
+    "stack": "container",
     "env": {
         "API_ID": {
-            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "3704772", 
+            "required": false
         },
         "API_HASH": {
-            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
-        },
-        "BOT_TOKEN": {
-            "description": "Get this from @BotFather XD"
-        },
-        "MONGODB_URI": {
-            "description": "MongoDB Database URI for Saving UserID for Broadcast. Tutorial: https://www.youtube.com/watch?v=aXlF80Cn7iU"
-        },
-        "LOG_CHANNEL": {
-            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
-        },
-        "DOWNLOAD_DIR": {
-            "description": "Files download path. You can keep default. Should not end with '/'",
-            "required": false,
-            "value": "./downloads"
-        },
-        "BROADCAST_AS_COPY": {
-            "description": "Broadcast as Copy or with Forward Tag. Value should be True/False.",
-            "required": false,
-            "value": "False"
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "b8e50a035abb851c0dd424e14cac4c06",
+            "required": false
         },
         "OWNER_ID": {
-            "description": "Bot Owner UserID"
+            "description": "",
+            "value": ""
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "",
+            "value": "False",
+            "required": false
+        },
+        "DOWNLOAD_DIR": {
+            "description": "",
+            "value": "./downloads",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "",
+            "value": "",
+            "required": true
+        },
+        "MONGODB_URI": {
+            "description": "",
+            "value": "",
+            "required": true
         }
     },
-    "buildpacks": [ 
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-        }, 
-        { 
-            "url": "heroku/python"
-        }
-    ],
     "formation": {
-        "worker": {
+        "rootedcyber": {
             "quantity": 1,
             "size": "free"
         }
